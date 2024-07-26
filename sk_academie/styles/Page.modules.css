@@ -1,0 +1,129 @@
+/*h3{*/
+/*    font-family: "Bell MT", serif;*/
+/*    color: blue;*/
+/*    font-size: 50px;*/
+/*}*/
+
+/*#nf{*/
+/*    width: 280px;*/
+/*    height: 280px;*/
+/*}*/
+
+/*h2{*/
+/*    font-size: larger;*/
+/*}*/
+
+/*h1{*/
+/*    font-size: 10px;*/
+/*    text-decoration: underline;*/
+/*    color: black;*/
+/*    opacity: 75px;*/
+/*    font-family: 'Segoe UI';*/
+/*    font-weight: bolder;*/
+/*}*/
+/*!* #com{*/
+/*    background-image:"../public/Batman-Family.jpg" ;*/
+/*} *!*/
+
+/*#bar{*/
+/*    font-size: larger;*/
+/*    color:cornflowerblue;*/
+/*}*/
+
+
+/*#barAnime{*/
+/*    font-size: larger;*/
+/*    color:cornflowerblue;*/
+/*}*/
+
+/*#SectRubriques{*/
+/*    width: 150px;*/
+/*    height: 90px;*/
+/*}*/
+
+/*#Liens.Liens2{*/
+/*    height: 50px;*/
+/*}*/
+/*img{*/
+/*    object-fit:fill ;*/
+
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+/* For Firefox */
+.scrollbar-hidden {
+    scrollbar-width: none;
+}
+
+
+
+
+
+/*.cadran { @apply w-[100%] h-[10%]   md:w-[16%] md:h-screen  rounded md:ml-1 space-y-6 }*/
+/*.coulText { @apply text-white  text-[28px] font-bold leading-7    }*/
+/*.coul2Text { @apply hidden md:block text-sky-500  text-[15px] font-light text-left md:ml-3   }*/
+/*.option { @apply h-auto  md:mt-9 w-[200px]  }*/
+/*.disposition { @apply flex items-center gap-1.5   }*/
+/*.disposition2 { @apply flex gap-5 w-[100%]   justify-evenly md:flex md:flex-col md:items-center mt-2 md:mt-1  }*/
+/*.disposition3 { @apply w-[22%] space-x-2 md:w-[90%] p-1 cursor-pointer text-xl  md:rounded-full h-10 mt-2 hover:bg-sky-500   ; &:hover{ & span { @apply text-black decoration-black } }  }*/
+/*.content-container {*/
+/*    max-width: 1140px;*/
+/*    position: relative;*/
+/*}*/
+/*.content-container > iframe {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
+/*!**/
+/*.poste-content:target {*/
+/*    display: block;*/
+/*}*/
+
+
+/*.poste-content:target ~ * {*/
+/*    display: none;*/
+/*}*/
+/**!*/
+
+/*.dise { @apply text-[14.5px] font-[poppins] font-extralight text-orange-300 mt-0  text-center  hidden md:block  }*/
+/*.card{*/
+/*    @apply border border-2 border-black rounded-3xl h-96 w-72 mt-12 items-center*/
+
+/*}*/
+/*.card2{*/
+/*    @apply border border-2 border-black rounded-3xl h-80 w-96  items-center*/
+
+/*}*/
+/*.card3{*/
+/*    @apply border border-2 border-black rounded-3xl h-96 w-96 mt-12 items-center*/
+
+/*}*/
+/*.card4{*/
+/*    @apply border border-2 border-black rounded-3xl h-48 w-[120%] mt-12 items-center*/
+
+/*}*/
+/*.card5{*/
+/*    @apply border border-2 border-black rounded-3xl h-36 w-[95%] mt-12 items-center*/
+
+/*}*/
+/*.card6{*/
+/*    @apply border border-2 border-black rounded-3xl h-96 w-[95%] mt-12 items-center*/
+
+/*}*/
+/*.menu button.active { @apply  bg-white ; & span { @apply text-gray-700 font-extralight text-lg ; }   }*/
+/*iframe.active{ @apply block}*/
