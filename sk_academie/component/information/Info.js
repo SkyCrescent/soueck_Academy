@@ -67,7 +67,7 @@ export default function Info() {
    ]
 
    const [scrollIndex, setScrollIndex] = useState(0);
-   const itemWidth = 12; // Adjust this value based on your item width and gap
+   const itemWidth = 15; // Adjust this value based on your item width and gap
 
    useEffect(() => {
       const interval = setInterval(() => {
