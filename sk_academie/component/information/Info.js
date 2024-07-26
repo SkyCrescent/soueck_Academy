@@ -78,6 +78,23 @@ export default function Info() {
       return () => clearInterval(interval);
    }, [team.length]);
 
+
+
+
+
+   const [scrollIndex2, setScrollIndex2] = useState(0);
+   const itemWidth2 = 21; // Adjust this value based on your item width and gap
+
+   useEffect(() => {
+      const interval2 = setInterval(() => {
+         setScrollIndex2((prevIndex) => (prevIndex + 1) % event.length);
+      }, 3000); // Change the delay to suit your needs
+      // ca fait bouger les element avec un distance de 21 et une intervalle de 3000 donc 3 secondes
+      //le styles fait bouge les image via animate scrool
+      return () => clearInterval(interval2);
+   }, [event.length]);
+
+
    const getData2 = async () => {
       try {
          // Remplacez l'URL par la bonne URL de votre API
@@ -277,12 +294,12 @@ export default function Info() {
              {/*</div>*/}
 
              <br></br>
-             <div className="relative h-auto md:h-auto lg:h-[53%]  w-full  overflow-x-hidden">
+             <div className="relative h-auto md:h-auto lg:h-[53%]  w-auto md:w-auto mx-auto  overflow-x-hidden">
 
 
                 <div
-                   className="relative w-[90%]  md:w-auto mx-auto  flex flex-row  gap-4   animate-scroll-step "
-                   style={{transform: `translateX(-${scrollIndex * itemWidth}rem)`}}
+                   className="relative w-[90%]  md:w-auto mx-auto   flex flex-row  gap-4   animate-scroll-step "
+                   style={{transform: `translateX(-${scrollIndex2 * itemWidth2}rem)`}}
 
                 >
                    {loading && (
