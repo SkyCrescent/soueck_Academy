@@ -42,6 +42,29 @@ export default function Info() {
 
    ]
 
+   const event =[
+      {
+         id: 26,
+         nom: "Veyron 2",
+         date_debut: "2024-06-14",
+         date_fin: "2024-07-31",
+         photo: "event/artworks-000197443510-a9cawy-t500x500.jpg"
+      },
+      {
+         id: 28,
+         nom: "Micro Trotoir",
+         date_debut: "2024-04-27",
+         date_fin: "2024-06-22",
+         photo: "event/MICRO ASA OFFICIEL (1).png"
+      },
+      {
+         id: 29,
+         nom: "Micro Trotoir 2",
+         date_debut: "2024-08-03",
+         date_fin: "2024-10-10",
+         photo: "event/WhatsApp Image 2024-05-15 à 22.10.25_094a0222.jpg"
+      }
+   ]
 
    const [scrollIndex, setScrollIndex] = useState(0);
    const itemWidth = 12; // Adjust this value based on your item width and gap
@@ -240,9 +263,11 @@ export default function Info() {
 
 
                 <div className="  w-auto text-xs lg:text-lg gap-3 md:flex md:items-center md:justify-center">
-                     <span className=" text-white"> <span className=" text-green-500 font-semibold ">SOUECK Academy</span> compte
+                     <span className=" text-white"> <span
+                        className=" text-green-500 font-semibold ">SOUECK Academy</span> compte
                      </span>
-                   <span className="text-xl md:text-3xl text-red-800 font-semibold"> {number}</span>
+                   {/*<span className="text-xl md:text-3xl text-red-800 font-semibold"> {number}</span>*/}
+                   <span className="text-xl md:text-3xl text-red-800 font-semibold"> {event.length}</span>
                    <span className="text-white"> évenements organisées
                      </span>
                 </div>
@@ -263,7 +288,7 @@ export default function Info() {
                    {loading && (
 
                       <div className="flex flex-row space-x-4  relative h-full">
-                         {filteredData.map((item, index) => (
+                         {event.map((item, index) => (
                             <div key={index}
                                  className="relative w-72 md:w-80 cursor-pointer bg-transparent hover:bg-gray-100/20 h-96 bg-gray-100  rounded-xl hover:shadow-2xl transition duration-300"
                             >

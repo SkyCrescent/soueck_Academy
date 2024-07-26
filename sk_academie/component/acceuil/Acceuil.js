@@ -16,6 +16,80 @@ export default function Acceuil() {
    const [id , SetId] = useState(0)
    const [filteredData, setFilteredData] = useState([]); // Initialize with all data
    const [comment, setcomment] = useState(false); // Initialize with all data
+   const item =[
+      {
+         id: 6,
+         media: "publication/Big-Hero-6-presskit-000.jpg",
+         dat: "25/07/2024",
+         contenu: "nbb",
+         visible: "Pour tous",
+         typeMedia: "image/jpeg",
+         id_evenement: 3
+      },
+      {
+         id: 9,
+         media: "publication/20240430_163202_0005.png",
+         dat: "26/07/2024",
+         contenu: "Remise de diplome de Participation",
+         visible: "Pour tous",
+         typeMedia: "image/png",
+         id_evenement: 26
+      },
+      {
+         id: 10,
+         media: "publication/20240430_163202_0006.png",
+         dat: "26/07/2024",
+         contenu: "Remise de diplome par la directrice de lassociation",
+         visible: "Pour tous",
+         typeMedia: "image/png",
+         id_evenement: 28
+      },
+      {
+         id: 11,
+         media: "publication/WhatsApp Image 2024-05-20 à 08.35.28_b4ec71a5.jpg",
+         dat: "26/07/2024",
+         contenu: "Excellente Pentecote",
+         visible: "Pour tous",
+         typeMedia: "image/jpeg",
+         id_evenement: 29
+      },
+      {
+         id: 12,
+         media: "publication/WhatsApp Vidéo 2024-07-16 à 09.46.28_90393cff.mp4",
+         dat: "26/07/2024",
+         contenu: "Soueck Academy",
+         visible: "Pour tous",
+         typeMedia: "video/mp4",
+         id_evenement: 28
+      },
+      {
+         id: 13,
+         media: "publication/WhatsApp Image 2024-07-25 à 22.19.25_edc79ea2.jpg",
+         dat: "26/07/2024",
+         contenu: "La Directrice SVP",
+         visible: "Pour tous",
+         typeMedia: "image/jpeg",
+         id_evenement: 28
+      },
+      {
+         id: 14,
+         media: "publication/DSC_0256 - Copie - Copie.JPG",
+         dat: "26/07/2024",
+         contenu: "Jour de la Competition",
+         visible: "Pour tous",
+         typeMedia: "image/jpeg",
+         id_evenement: 28
+      },
+      {
+         id: 15,
+         media: "publication/WhatsApp Image 2024-07-20 à 22.09.58_48a54008.jpg",
+         dat: "26/07/2024",
+         contenu: "Madame Nancy",
+         visible: "Pour tous",
+         typeMedia: "image/jpeg",
+         id_evenement: 28
+      }
+   ]
 
    const getData = async () => {
       try {
@@ -38,6 +112,8 @@ export default function Acceuil() {
    useEffect(() => {
       getData()
       console.log(baseUrl)
+      SetLoading(true)
+   //    Lorsque je vais remettre le getData faudra retirer le le item et remettre le  filteredData
    }, []);
 
 
@@ -62,7 +138,7 @@ export default function Acceuil() {
              {
                 loading ? (
                       <ul>
-                         {filteredData.map((mook) => (
+                         {item.map((mook) => (
                             <li key={mook.id}>
 
                                <div className=" relative h-[100%] w-[100%] md:w-[90%] lg:w-[80%] mx-auto  ">

@@ -222,7 +222,7 @@ const getDate = () =>{
 
       if (selectedFile1) {
          // Vérifier si le fichier est une image en vérifiant l'extension
-         const allowedExtensions = ["jpg", "jpeg","mp4","mkv","3gp","MP4"];
+         const allowedExtensions = ["jpg", "jpeg","mp4","png","PNG","mkv","3gp","MP4"];
          const fileNameParts = selectedFile1.name.split(".");
          const fileExtension = fileNameParts[fileNameParts.length - 1].toLowerCase();
 
@@ -368,7 +368,7 @@ const getDate = () =>{
                                           <div className="relative mx-auto h-[10%] w-[80%] ">
                                              {/*<img src={`data:image/png;base64,${mook.media}`} alt={`Media ${mook.id}`} className="relative h-[30%] w-[90%] mx-auto  " />*/}
 
-                                             {mook.typeMedia.includes("image/jpeg") ? (
+                                             {mook.typeMedia.includes("image/jpeg") || mook.typeMedia.includes("image/png") ? (
                                                 <img
                                                    src={`/${mook.media}`}
                                                    alt={`Media ${mook.id}`}
