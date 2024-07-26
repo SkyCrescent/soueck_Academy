@@ -20,7 +20,7 @@ export default function Info() {
    const [ formattedDate2 ,SetformattedDate] = useState('')
    const [filteredData, setFilteredData] = useState([]); // Initialize with all data
    const [number , SetNumber] = useState(0)
-   const [loading , SetLoading ] = useState(false)
+   const [loading , SetLoading ] = useState(true)
 
    const team = [
       {  id :1 , nom: "Boukou Makaya Soueke Naomine" , role :"Fondatrice et Présidente de Soueke Academy" ,motSuite1 :"Boukou Makaya Soueke Naomine est la fondatrice et présidente de Soueke Academy, une initiative qui a pour but de promouvoir l'éducation et la culture congolaises",
