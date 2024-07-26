@@ -104,7 +104,7 @@ export default function page(){
                   className="object-contain object-center w-full h-full opacity-100     "
                />
              </div>
-             <div className=" w-[100%] h-[18%] absolute bottom-8  md:bottom-10 lg:bottom-32 flex items-center justify-center ">
+             <div className=" w-[100%] h-[18%] absolute bottom-12  md:bottom-10 lg:bottom-32 flex items-center justify-center ">
                {/*border border-red-600*/}
 
                <div className= { showCarre ?  "absolute  z-20 rounded-lg  bg-white h-12 w-12  opacity-10 left-[22%] md:left-[49%]  " :

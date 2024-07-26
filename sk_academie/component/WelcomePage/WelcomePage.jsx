@@ -61,7 +61,7 @@ export default function WellcomePage(){
                   />
                </div>
                <div
-                  className="border-l-0 border-t-0 border-r-0 border-b-1 border-[#303132] h-[100%] w-[30%] md:w-[30%] lg:w-[20%] flex items-center justify-between cursor-pointer font-[Gotham]  uppercase text-[8px] md:text-base    ">
+                  className="border-l-0 border-t-0 border-r-0 border-b-1 border-[#303132] h-[100%] w-[40%] md:w-[30%] lg:w-[20%] flex items-center justify-between cursor-pointer font-[Gotham]  uppercase text-[12px] md:text-base    ">
                   {/*<div onClick={()=> SetEtat(1)} className="hover:font-bold transition duration-1000"  > <span className={ etat === 1 ?  "text-white font-bold" :"text-[#072c42] " }>Acceuil</span></div>*/}
                   <div onClick={() => SetEtat(3)} className="hover:font-bold transition duration-1000"><span
                      className={etat === 3 ? "text-white font-bold" : "text-[#072c42] "}>Acceuil</span></div>
